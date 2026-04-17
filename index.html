@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kota Sakatsume | Portfolio</title>
+    <meta name="description" content="Kota Sakatsume のポートフォリオサイト。スキルやプロジェクトを紹介しています。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">KS</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="nav-toggle" class="nav-toggle" aria-label="メニュー切替">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-name">Kota Sakatsume</h1>
+            <p class="hero-title">Software Engineer</p>
+            <p class="hero-description">
+                「開発者が一番のユーザーである」をモットーに、ユーザー体験を大切にしたプロダクト開発を行っています。
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-shape"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="profile.jpg" alt="Kota Sakatsume" class="about-profile-img">
+                </div>
+                <div class="about-text">
+                    <p>
+                        はじめまして。42Tokyoでエンジニアを勉強している坂爪虹太です。
+                    </p>
+                    <p>
+                        ユーザーにとって何が価値あるものなのかを常に考えながら開発しています。
+                        開発者視点とユーザー視点の両方を大切にしています。
+                    </p>
+                    <p>
+                        サッカーはプレミアリーグのアーセナルを応援しています。
+                        映画は洋画、邦画などジャンルは問わずに色々観ます。年間に約50本くらい観ます。
+                    </p>
+                    <div class="about-details">
+                        <div class="about-detail-item">
+                            <span class="detail-label">所在地</span>
+                            <span class="detail-value">東京, 日本</span>
+                        </div>
+                        <div class="about-detail-item">
+                            <span class="detail-label">学歴</span>
+                            <span class="detail-value"><a href="https://42tokyo.jp/" target="_blank"
+                                    rel="noopener noreferrer">42Tokyo</a></span>
+                        </div>
+                        <div class="about-detail-item">
+                            <span class="detail-label">趣味</span>
+                            <span class="detail-value">サッカー観戦 / 映画鑑賞</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>HTML / CSS</li>
+                        <li>JavaScript / TypeScript</li>
+                        <li>React / Next.js</li>
+                        <li>Three.js</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Next.js</li>
+                        <li>C / C++</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"></path>
+                            <path d="M12 12l8-4.5"></path>
+                            <path d="M12 12v9"></path>
+                            <path d="M12 12L4 7.5"></path>
+                        </svg>
+                    </div>
+                    <h3>Tools & Others</h3>
+                    <ul class="skill-list">
+                        <li>Git / GitHub</li>
+                        <li>Docker</li>
+                        <li>Linux / Shell</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <article class="project-card" data-project-id="shogi">
+                    <div class="project-body">
+                        <h3 class="project-name">5×5 将棋ゲーム</h3>
+                        <p class="project-desc">
+                            リアルタイム対戦が可能な5×5ミニ将棋アプリ。WebSocket通信、3Dアニメーション、チャット機能を実装。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Three.js</span>
+                            <span class="tag">WebSocket</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KotaSakatsume/ft_transcendence/tree/dev" target="_blank"
+                                rel="noopener noreferrer" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project-id="minishell">
+                    <div class="project-body">
+                        <h3 class="project-name">minishell</h3>
+                        <p class="project-desc">
+                            bashを再構築するプロジェクト。環境変数、マルチパイプ、リダイレクト、シグナル処理などの機能をC言語のみで一から実装しました。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Shell</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KotaSakatsume/minishell" target="_blank"
+                                rel="noopener noreferrer" class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project-id="irc">
+                    <div class="project-body">
+                        <h3 class="project-name">ft_IRC</h3>
+                        <p class="project-desc">
+                            IRCサーバーをC++でフルスクラッチ開発。RFCに準拠した通信プロトコル、チャンネル管理、ユーザー認証、プライベートメッセージ機能を実装しました。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Network</span>
+                            <span class="tag">Socket</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KotaSakatsume/ft_IRC" target="_blank" rel="noopener noreferrer"
+                                class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project-id="cub3d">
+                    <div class="project-body">
+                        <h3 class="project-name">cub3D</h3>
+                        <p class="project-desc">
+                            レイキャスティング技術を用いた疑似3Dエンジン。Wolfenstein 3Dの仕組みを元に、壁の描画や衝突判定をC言語のみで演算・実装しました。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Graphics</span>
+                            <span class="tag">Algorithm</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KotaSakatsume/cub3D" target="_blank" rel="noopener noreferrer"
+                                class="project-link">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-lead">
+                お気軽にご連絡ください。
+            </p>
+            <div class="contact-links">
+                <a href="mailto:neymar_11_bfc@yahoo.co.jp" class="contact-item" id="contact-email"
+                    title="Click to copy">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>neymar_11_bfc@yahoo.co.jp</span>
+                </a>
+                <a href="https://github.com/KotaSakatsume" target="_blank" rel="noopener noreferrer"
+                    class="contact-item" id="contact-github">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kota Sakatsume. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h2 id="modal-title">Project Name</h2>
+                    <div id="modal-tags" class="project-tags"></div>
+                </div>
+                <div class="modal-full-info">
+                    <h3>Overview</h3>
+                    <p id="modal-description"></p>
+                    <h3>Key Features & Challenges</h3>
+                    <ul id="modal-features"></ul>
+                    <div class="modal-links">
+                        <a href="#" id="modal-github" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
