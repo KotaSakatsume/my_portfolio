@@ -13,7 +13,8 @@ const projectsData = {
       'リロードしてもゲームが中断されない再接続ロジック',
       'OAuth認証によるログイン'
     ],
-    github: 'https://github.com/KotaSakatsume/ft_transcendence/tree/dev'
+    github: 'https://github.com/KotaSakatsume/ft_transcendence/tree/dev',
+    playUrl: 'https://gogoshogi.duckdns.org/login'
   },
   minishell: {
     title: 'minishell',
@@ -72,6 +73,7 @@ function openModal(projectId) {
   const tagsContainer = document.getElementById('modal-tags');
   const featuresList = document.getElementById('modal-features');
   const githubLink = document.getElementById('modal-github');
+  const playLink = document.getElementById('modal-play');
 
   if (title) title.textContent = data.title;
   if (desc) desc.textContent = data.description;
@@ -96,6 +98,15 @@ function openModal(projectId) {
   }
 
   if (githubLink) githubLink.href = data.github;
+
+  if (playLink) {
+    if (data.playUrl) {
+      playLink.href = data.playUrl;
+      playLink.style.display = 'inline-flex';
+    } else {
+      playLink.style.display = 'none';
+    }
+  }
 
   if (modal) {
     modal.classList.add('active');
